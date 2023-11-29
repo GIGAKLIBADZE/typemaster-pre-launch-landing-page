@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    font-family: 'Barlow', sans-serif !important;
+    background-color: #FFF;
+    overflow-x: hidden;
+}
+
+body header {
+    padding-top: 3.4rem;
+}
+
+.keyboard-photo {
+    width: 90%;
+}
