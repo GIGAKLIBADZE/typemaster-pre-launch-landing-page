@@ -1,27 +1,232 @@
+/* Import CSS font family */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
 
+/* Set default properties */
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5% !important; /* Set default font size */
 }
-
+ 
+/* Set default properties in body for other elements */
 body {
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
     font-family: 'Barlow', sans-serif !important;
     background-color: #FFF;
     overflow-x: hidden;
 }
 
+/* Execute the header and its children elements */
 body header {
-    padding-top: 3.4rem;
+    padding: 3.4rem 2.4rem 0 2.4rem;
+    font-size: 2em !important;
+    overflow-x: hidden;
+}
+
+.upper-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square {
+    width: 2em;
+    height: 2em;
+}
+
+.pre-order1 {
+    font-size: 1em;
+    /* width: 150px; */
+    height: 2.4em;
+    border-radius: 8px;
+    background-color: #E8EFF2;
+    border: none;    
+}
+
+.pre-order1 p {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #162542;
+    padding: 0.55em 0.7em 0.55rem 0.7em;
+    line-height: 26px;
+}
+
+.header-text {
+    font-size: 2em;
+    margin-top: 3.2em;
+}
+
+.header-text h1 {
+    width: 327px;
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #162542;
+    line-height: 48px;
+}
+
+.for-what {
+    margin-top: 1.6em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #7B8BAD;
+    line-height: 26px;
+}
+
+.pre-order2 {
+    font-size: 1em;
+    /* width: 7.5em; */
+    height: 2.4em;
+    border-radius: 8px;
+    background-color: #F16718;
+    border: none; 
+    margin-top: 1.6em;
+}
+
+.pre-order2 p {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #FFF;
+    padding: 0.55em 0.7em 0.55rem 0.7em;
+    line-height: 26px;
+}
+
+.header-text {
+    font-size: 1em;
+}
+
+header small {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #7B8BAD;
+    line-height: 26px;
+    margin-left: 32px;
+}
+
+.keyboard {
+    margin-top: 3.3em;
+    display: flex;
+    justify-content: center;
 }
 
 .keyboard-photo {
-    width: 90%;
+    width: 375px;
+    border-radius: 20px;
+}
+
+/* Then execute main and its children elements */
+ body main {
+    font-size: 2em !important;
+    overflow-x: hidden;
+ }
+
+.second-and-third-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8em;
+    margin-top: 1.1em;
+}
+
+.second-photo {
+    width: 9.1em;
+    height: 9.1em;
+    border-radius: 20px;
+    opacity: 0.7486;
+    margin-left: -1.2em;
+}
+
+.third-photo {
+    width: 9.1em;
+    height: 9.1em;
+    border-radius: 20px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.75em;
+}
+
+.main-text h2 {
+    width: 255px;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #162542;
+    line-height: 36px;
+    text-align: center;
+}
+
+.main-text p {
+    width: 327px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #7B8BAD;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Finally execute footer and its children elements */
+body footer {
+    font-size: 2em;
+    padding-bottom: 5rem;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compatible-img, .bluetooth-img, .battery-img, .light-img {
+    width: 3.25em;
+    height: 3.25em;
+    background-color: hsla(22, 88%, 52%, 1);
+    border-radius: 16px;
+    margin-top: 3.2em;
+}
+
+.compatible-img {
+    margin-top: 5.55em;
+}
+
+section h3 {
+    /* width: 327px; */
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #162542;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 2.4em;
+}
+
+section p {
+    width: 327px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #7B8BAD;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+.final-edit {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #7B8BAD;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.final-edit b {
+    font-weight: 700;
 }
