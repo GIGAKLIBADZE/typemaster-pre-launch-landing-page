@@ -71,6 +71,7 @@ body header {
 }
 
 .for-what {
+    width: 327px;
     margin-top: 1.6em;
     font-size: 0.8em;
     font-weight: 500;
@@ -229,4 +230,116 @@ section p {
 
 .final-edit b {
     font-weight: 700;
+}
+
+/* Make RWD for tablets */
+@media only screen and (min-width: 768px) {
+    /* Execute the header and its children elements */
+    body header {
+        padding-top: 4.5rem;
+    }
+
+    .pre-order1 {
+        height: 2.9em;
+    }
+
+    .text-photo-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-text {
+        margin-top: 6.55em;
+        padding-left: 3.9rem;
+    }
+
+    header h1, .for-what {
+        width: 339px;
+    }
+    
+    .pre-order2 {
+        height: 2.9em;
+    }
+
+    header small {
+        margin-left: 37px;
+    }
+
+    .keyboard {
+        height: 20.5em;
+        margin-left: 2.5em;
+    }
+
+    /* Execute the main and its children elements */
+    .second-and-third-photos {
+        margin-top: 2.1em;
+    }
+
+    .second-photo {
+        width: 12em;
+        height: 18em;
+        margin-left: 0em;
+    }
+
+    .third-photo {
+        width: 23em;
+        height: 18em;
+    }
+
+    .main-text {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1.8em;
+    }
+
+    .main-text h2 {
+        text-align: left;
+    }
+
+    .main-text p {
+        width: 398px;
+        text-align: left;
+    }
+
+    /* Execute the main and its children elements */
+    footer section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .compatible,
+    .bluetooth,
+    .battery,
+    .light {
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+        align-items: flex-start;
+    }
+
+    .compatible,
+    .battery {
+        padding-left: 1.95em;
+    }
+
+    .compatible h3,
+    .bluetooth h3,
+    .battery h3, 
+    .light h3 {
+        width: 255px;
+        text-align: left;
+    }
+
+    .compatible p,
+    .bluetooth p,
+    .battery p, 
+    .light p {
+        width: 281px;
+        text-align: left;
+    }
+
+    
 }
