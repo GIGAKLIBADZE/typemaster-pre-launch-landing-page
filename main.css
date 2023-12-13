@@ -115,15 +115,25 @@ header small {
     justify-content: center;
 }
 
-.keyboard-photo {
+.keyboard-photo-mobile {
     width: 375px;
     border-radius: 20px;
+}
+
+.keyboard-photo-tablet,
+.keyboard-photo-desktop {
+    display: none;
+}
+
+.rectangle1,
+.rectangle2 {
+    display: none;
 }
 
 /* Then execute main and its children elements */
  body main {
     font-size: 2em !important;
-    overflow-x: hidden;
+    overflow: hidden;
  }
 
 .second-and-third-photos {
@@ -134,7 +144,7 @@ header small {
     margin-top: 1.1em;
 }
 
-.second-photo {
+.second-photo-mobile {
     width: 9.1em;
     height: 9.1em;
     border-radius: 20px;
@@ -142,10 +152,17 @@ header small {
     margin-left: -1.2em;
 }
 
-.third-photo {
+.third-photo-mobile {
     width: 9.1em;
     height: 9.1em;
     border-radius: 20px;
+}
+
+.second-photo-tablet,
+.second-photo-desktop, 
+.third-photo-tablet,
+.third-photo-desktop {
+    display: none;
 }
 
 .main-text {
@@ -232,6 +249,10 @@ section p {
     font-weight: 700;
 }
 
+
+.rectangle {
+    display: none;
+}
 /* Make RWD for tablets */
 @media only screen and (min-width: 768px) {
     /* Execute the header and its children elements */
@@ -271,20 +292,51 @@ section p {
         margin-left: 2.5em;
     }
 
+    .keyboard-photo-mobile,
+    .keyboard-photo-desktop {
+        display: none;
+    }
+
+    .keyboard-photo-tablet {
+        display: block;
+        width: 375px;
+        border-radius: 20px;
+    }
+
+    .rectangle1,
+    .rectangle2 {
+        display: none;
+    }
+
     /* Execute the main and its children elements */
     .second-and-third-photos {
         margin-top: 2.1em;
     }
 
-    .second-photo {
+    .second-photo-mobile,
+    .second-photo-desktop,
+    .third-photo-mobile,
+    .third-photo-desktop {
         width: 12em;
         height: 18em;
         margin-left: 0em;
+        display: none;
     }
 
-    .third-photo {
+    .second-photo-tablet {
+        display: block;
+        width: 12em;
+        height: 18em;
+        border-radius: 20px;
+        opacity: 0.7486;
+        margin-left: 0em;
+    }
+
+    .third-photo-tablet {
+        display: block;
         width: 23em;
         height: 18em;
+        border-radius: 20px
     }
 
     .main-text {
@@ -300,9 +352,14 @@ section p {
     .main-text p {
         width: 398px;
         text-align: left;
+        margin-top: 0;
     }
 
-    /* Execute the main and its children elements */
+    /* Execute the footer and its children elements */
+    body footer {
+        padding-bottom: 4rem;
+    }
+
     footer section {
         flex-direction: row;
         flex-wrap: wrap;
@@ -329,7 +386,7 @@ section p {
     .bluetooth h3,
     .battery h3, 
     .light h3 {
-        width: 255px;
+        width: 339px;
         text-align: left;
     }
 
@@ -339,7 +396,151 @@ section p {
     .light p {
         width: 281px;
         text-align: left;
+    } 
+
+    .final-edit {
+        margin-top: 142px;
+    }
+}
+
+/* Make RWD for desktops */
+@media only screen and (min-width: 1440px) {
+    body header {
+        padding-top: 6.4rem;
+        padding-left: 16.5rem;
     }
 
+    .upper-elements {
+        padding-right: 16.5rem;
+    }
     
+    .text-photo-holder {
+        justify-content: normal;
+    }
+
+    .header-text {
+        padding-left: 0;
+    }
+
+    .header-text h1 {
+        width: 445px;
+        font-size: 2.8em;
+        line-height: 56px;
+    }
+
+    .for-what {
+        width: 445px;
+        font-size: 0.9em;
+    }
+
+    .keyboard {
+        margin-left: 14.5%;
+    }
+
+    .keyboard-photo-mobile,
+    .keyboard-photo-tablet {
+        display: none;
+    }
+
+    .keyboard-photo-desktop {
+        display: block;
+        border-radius: 20px;
+    }
+
+    .rectangle1 {
+        display: block;
+        width: 255px;
+        height: 240px;
+        background-color: #E8EFF2;
+        border-radius: 20px;
+        margin-right: -50%;
+        margin-top: 3.4em;
+        margin-left: 2%;
+    }
+
+    /* Execute the header and its children elements */
+    .rectangle2 {
+        display: block;
+        width: 255px;
+        height: 240px;
+        background-color: #E8EFF2;
+        border-radius: 20px;
+        margin-left: -25%;
+        margin-right: 2%;
+    }
+
+    body main {
+        display: flex;
+
+    }
+
+    .main-text {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.35em;
+    }
+
+    .second-photo-mobile,
+    .second-photo-tablet,
+    .third-photo-mobile,
+    .third-photo-tablet {
+        display: none;
+    }
+
+    .second-photo-desktop,
+    .third-photo-desktop {
+        display: block;
+    }
+
+    .second-photo-desktop {
+        height: 20em;
+        border-radius: 20px;
+    }
+
+    .third-photo-desktop  {
+        width: 26em;
+        height: 20em;
+        border-radius: 20px;
+    }
+
+    .main-text p {
+        width: 255px;
+    }
+
+    /* Execute the footer and its children elements */
+    body footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .compatible {
+        padding-left: 0; 
+    }
+
+    .bluetooth,
+    .battery,
+    .light {
+        margin-left: 30px;
+    }
+
+    .compatible h3,
+    .compatible p,
+    .bluetooth h3,
+    .bluetooth p,
+    .battery h3,
+    .battery p, 
+    .light h3,
+    .light p {
+        width: 255px;
+    }
+
+    .final-edit {
+        margin-top: 6.4em;
+    }
 }
