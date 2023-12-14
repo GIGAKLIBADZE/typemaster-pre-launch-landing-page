@@ -203,12 +203,18 @@ footer section {
     align-items: center;
 }
 
-.compatible-img, .bluetooth-img, .battery-img, .light-img {
+.compatible-div, 
+.bluetooth-div, 
+.battery-div, 
+.light-div { 
     width: 3.25em;
     height: 3.25em;
     background-color: hsla(22, 88%, 52%, 1);
     border-radius: 16px;
     margin-top: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .compatible-img {
@@ -216,7 +222,7 @@ footer section {
 }
 
 section h3 {
-    /* width: 327px; */
+    width: 219px;
     font-size: 1.2em;
     font-weight: 900;
     color: #162542;
@@ -358,6 +364,7 @@ section p {
     /* Execute the footer and its children elements */
     body footer {
         padding-bottom: 4rem;
+        margin-top: 7.1em;
     }
 
     footer section {
@@ -365,6 +372,11 @@ section p {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .compatible-img,
+    .bluetooth-img {
+        margin-top: 0px;
     }
 
     .compatible,
@@ -386,7 +398,7 @@ section p {
     .bluetooth h3,
     .battery h3, 
     .light h3 {
-        width: 339px;
+        width: 219px;
         text-align: left;
     }
 
@@ -465,19 +477,20 @@ section p {
         height: 240px;
         background-color: #E8EFF2;
         border-radius: 20px;
-        margin-left: -25%;
+        margin-left: -37%;
         margin-right: 2%;
     }
 
     body main {
         display: flex;
-
+        justify-content: center;
     }
 
     .main-text {
         flex-direction: column;
         justify-content: center;
         gap: 1.35em;
+        margin-left: -30px;
     }
 
     .second-photo-mobile,
@@ -519,9 +532,17 @@ section p {
         justify-content: center;
     }
 
-    .compatible {
+    .compatible,
+    .battery {
         padding-left: 0; 
     }
+
+    .compatible-div,
+    .battery-div,
+    .bluetooth-div,
+    .light-div {
+        margin-top: 0;
+    }    
 
     .bluetooth,
     .battery,
@@ -537,7 +558,7 @@ section p {
     .battery p, 
     .light h3,
     .light p {
-        width: 255px;
+        width: 219px;
     }
 
     .final-edit {
